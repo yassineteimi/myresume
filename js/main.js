@@ -143,7 +143,6 @@
             scrollTop();
         });
 
-
     // On Document Load
     $(document).on('ready', function() {
         // Page Scroll to id fn call //
