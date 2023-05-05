@@ -21,6 +21,14 @@
   </head>
 
   <body>
+    <!-- (C) ENTIRE PAGE TO PDF -->
+    <script>
+      function toPDF () {
+        html2pdf()
+          .from(document.body)
+          .save();
+      }
+    </script>
     <!-- Loading animation -->
     <div class="preloader">
       <div class="preloader-animation">
@@ -1110,14 +1118,6 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/main.js"></script>
-    <!-- (C) ENTIRE PAGE TO PDF -->
-    <script>
-      function toPDF () {
-        html2pdf()
-          .from(document.body)
-          .save();
-      }
-    </script>
     <!-- <script>
       function generatePDF() {
       const element = document.getElementById("page");
