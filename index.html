@@ -21,25 +21,6 @@
   </head>
 
   <body>
-    <script>
-      function toPDF () {
-        html2pdf()
-          // (C1) SET OPTIONS
-          .set({
-            margin: 1,
-            filename: "CV.pdf",
-            image: { type: "jpeg", quality: 0.8 },
-            enableLinks : true,
-            jsPDF: { format: "A4", orientation: "landscape" }
-          })
-  
-          // (C2) GET CONTENT FROM SECTION
-          .from(document.getElementById("page"))
-  
-          // (C3) SAVE TO FILE
-          .save();
-      }
-    </script>
     <!-- Loading animation -->
     <div class="preloader">
       <div class="preloader-animation">
@@ -1129,6 +1110,25 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function toPDF () {
+        html2pdf()
+          // (C1) SET OPTIONS
+          .set({
+            margin: 1,
+            filename: "CV.pdf",
+            image: { type: "jpeg", quality: 0.8 },
+            enableLinks : true,
+            jsPDF: { format: "A4", orientation: "landscape" }
+          })
+  
+          // (C2) GET CONTENT FROM SECTION
+          .from(document.getElementById("page"))
+  
+          // (C3) SAVE TO FILE
+          .save();
+      }
+    </script>
     <!-- <script>
       function generatePDF() {
       const element = document.getElementById("page");
