@@ -129,6 +129,7 @@
             <!-- End of Home Subpage -->
 
             <!-- About Me Subpage -->
+          <div id="pdf-resume">
             <section class="pt-page" id="about-me">
               <div class="section-inner custom-page-content">
                 <div class="section-title-block second-style">
@@ -670,6 +671,7 @@
                 </div>
               </div>
             </section>
+          </div>
             <!-- End of Resume Subpage -->
 
 
@@ -1112,7 +1114,7 @@
     <script src="js/main.js"></script>
     <script>
       function generatePDF() {
-      const element = document.getElementById("page");
+      const element = document.getElementById("pdf-resume");
       // document.getElementById("reportbox").style.display = "block";
       // document.getElementById("reportbox").style.marginTop = "0px"; 
       // document.getElementById("pageprint").style.border = "1px solid black";
@@ -1120,7 +1122,7 @@
       }
       
       function downloadCode(){
-      var x = document.getElementById("main");  
+      var x = document.getElementById("pdf-resume");  
       generatePDF();
       setTimeout(function() { window.location=window.location;},3000);}
     </script>
