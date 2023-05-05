@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/modernizr.custom.js"></script>
   </head>
 
@@ -1114,7 +1114,7 @@
     <script src="js/main.js"></script>
     <script>
       function generatePDF() {
-      const element = document.getElementById("page");
+      const element = document.getElementById("pdf-resume");
       // document.getElementById("reportbox").style.display = "block";
       // document.getElementById("reportbox").style.marginTop = "0px"; 
       // document.getElementById("pageprint").style.border = "1px solid black";
@@ -1122,10 +1122,9 @@
       }
       
       function downloadCode(){
-      var x = document.getElementById("page");  
+      var x = document.getElementById("pdf-resume");
       generatePDF();
       setTimeout(function() { window.location=window.location;},3000);}
     </script>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</html>
+  </html>
