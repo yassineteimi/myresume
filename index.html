@@ -1112,15 +1112,15 @@
     <script src="js/main.js"></script>
     <script>
       function generatePDF() {
-      const element = document.getElementById("page");
+      const element = document.getElementById("main");
       // document.getElementById("reportbox").style.display = "block";
       // document.getElementById("reportbox").style.marginTop = "0px"; 
       // document.getElementById("pageprint").style.border = "1px solid black";
-      html2pdf().from(element).save('download.pdf'); 
+      html2pdf().from(element).save('CV-YassineTeimi-SA.pdf'); 
       }
       
       function downloadCode(){
-      var x = document.getElementById("page");  
+      var x = document.getElementById("main");  
       generatePDF();
       setTimeout(function() { window.location=window.location;},3000);}
     </script>
