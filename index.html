@@ -102,7 +102,7 @@
         <!-- Page changer wrapper -->
         <div class="pt-wrapper">
           <!-- Subpages -->
-          <div class="subpages">
+          <div id="subpages" class="subpages">
 
             <!-- Home Subpage -->
             <section id="home" class="pt-page pt-page-home start-page">
@@ -672,7 +672,7 @@
                         })
                 
                         // (C2) GET CONTENT FROM SECTION
-                        .from(document.getElementById("main"))
+                        .from(document.getElementById("subpages"))
                 
                         // (C3) SAVE TO FILE
                         .save();
