@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="js/modernizr.custom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </head>
 
   <body>
@@ -84,7 +84,7 @@
                 <img src="images/photo.jfif" alt="image">
             </a>
           </div>
-          <div class="mobile-site-title"><a href="#">Alex Smith</a></div>
+          <div class="mobile-site-title"><a href="#">Yassine TEIMI</a></div>
         </div>
 
         <a class="menu-toggle mobile-visible">
@@ -659,11 +659,31 @@
                     </div>
                   </div>
 
+                  <script>
+                    function toPDF () {
+                      html2pdf()
+                        // (C1) SET OPTIONS
+                        .set({
+                          margin: 1,
+                          filename: "CV-YassineTeimi-SA.pdf",
+                          image: { type: "jpeg", quality: 0.8 },
+                          enableLinks : true,
+                          jsPDF: { format: "A4", orientation: "landscape" }
+                        })
+                
+                        // (C2) GET CONTENT FROM SECTION
+                        .from(document.getElementById("main"))
+                
+                        // (C3) SAVE TO FILE
+                        .save();
+                    }
+                  </script>
+
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
                       <div class="col-inner ts-30">
                         <!--a href="#" target="_blank" class="btn btn-primary" download>Download CV</a-->
-                        <button type="button" onclick="downloadCode();" class="btn btn-primary">Download CV</button>
+                        <button type="button" onclick="toPDF();" class="btn btn-primary">Download CV</button>
                       </div>
                     </div>
                   </div>
@@ -1110,7 +1130,7 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/main.js"></script>
-    <script>
+    <!-- <script>
       function generatePDF() {
       const element = document.getElementById("page");
       // document.getElementById("reportbox").style.display = "block";
@@ -1123,6 +1143,6 @@
       var x = document.getElementById("page");
       generatePDF();
       setTimeout(function() { window.location=window.location;},3000);}
-    </script>
+    </script> -->
   </body>
   </html>
