@@ -21,11 +21,22 @@
   </head>
 
   <body>
-    <!-- (C) ENTIRE PAGE TO PDF -->
     <script>
       function toPDF () {
         html2pdf()
-          .from(document.body)
+          // (C1) SET OPTIONS
+          .set({
+            margin: 1,
+            filename: "CV.pdf",
+            image: { type: "jpeg", quality: 0.8 },
+            enableLinks : true,
+            jsPDF: { format: "A4", orientation: "landscape" }
+          })
+  
+          // (C2) GET CONTENT FROM SECTION
+          .from(document.getElementById("page"))
+  
+          // (C3) SAVE TO FILE
           .save();
       }
     </script>
