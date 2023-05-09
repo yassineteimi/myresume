@@ -1271,6 +1271,10 @@ blockquote {
   font-size: .92em;
 }
 
+.experience-description li {
+  font-size: 13px;
+}
+
 
 /* Skills */
 .section-title-block.second-style .section-description {
