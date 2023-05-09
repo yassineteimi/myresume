@@ -1333,13 +1333,13 @@ blockquote {
 }
 
 .skill-percentage.skill-1 {
-  width: 95%;
+  width: 90%;
 }
 .skill-percentage.skill-2 {
-  width: 65%;
+  width: 70%;
 }
 .skill-percentage.skill-3 {
-  width: 80%;
+  width: 60%;
 }
 .skill-percentage.skill-4 {
   width: 90%;
@@ -1351,15 +1351,18 @@ blockquote {
   width: 70%;
 }
 .skill-percentage.skill-7 {
-  width: 60%;
+  width: 90%;
 }
 .skill-percentage.skill-8 {
   width: 75%;
 }
 .skill-percentage.skill-9 {
-  width: 100%;
+  width: 85%;
 }
 .skill-percentage.skill-10 {
+  width: 80%;
+}
+.skill-percentage.skill-11 {
   width: 80%;
 }
 /* /Skills */
